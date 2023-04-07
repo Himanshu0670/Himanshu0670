@@ -1,4 +1,4 @@
-[![MasterHead](https://miro.medium.com/v2/resize:fit:1360/1*IRGHmiGsa16stedQvIaZfw.gif)]
+![MasterHead](https://miro.medium.com/v2/resize:fit:1360/1*IRGHmiGsa16stedQvIaZfw.gif)
 <h1 align="center">Hi 👋, I'm Himanshu Kumar Pal</h1>
 <h3 align="center">A passionate software tester from India.</h3>
 <img align="right" alt="Testing" width="400" src="https://media1.tenor.com/images/cd37fa49c983ac905df0016fd5b6a2ee/tenor.gif?itemid=13165216" />
@@ -13,6 +13,8 @@
 - 💬 Ask me about **Cypress**
 
 - 📫 How to reach me **himan168559@gmail.com**
+
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
 
 - 📄 Know about my experiences [https://drive.google.com/file/d/1Wf02Fi9ndfR5q0hXPlm_hs39-RgIRT6-/view?usp=sharing](https://drive.google.com/file/d/1Wf02Fi9ndfR5q0hXPlm_hs39-RgIRT6-/view?usp=sharing)
 
