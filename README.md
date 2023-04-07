@@ -13,9 +13,8 @@
 - 💬 Ask me about **Cypress**
 
 - 📫 How to reach me **himan168559@gmail.com**
-<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
 
-- 📄 [Know about my experiences](https://drive.google.com/file/d/1Wf02Fi9ndfR5q0hXPlm_hs39-RgIRT6-/view) 
+- **📄 [Know about my experiences](https://drive.google.com/file/d/1Wf02Fi9ndfR5q0hXPlm_hs39-RgIRT6-/view)** 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
