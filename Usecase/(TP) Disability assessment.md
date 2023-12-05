@@ -2,7 +2,7 @@
 - [DisabilityAssessment-Add](/../main/Webusecase/ClinicalFlow/Issue%20Assistive%20Device-Add.md)
 - [DisabilityAssessment-View&Edit](/../main/Webusecase/ClinicalFlow/Issue%20Assistive%20Device-View%26Remove.md)
 
-## Test Procedure includes: Add, Remove & View issue assistive devices
+## Test Procedure includes: Add, Edit & View disability assessment 
 
 <details open>
    <summary><h2>1. DisabilityAssessment- Add  ✅ ❌ </h2></summary>
@@ -36,5 +36,19 @@ S No | Action                      | Expected Result | Actual Result (if differe
 1.17 |Select any one radio button for all the mandatory questions|Radio button is selected|| ✅ ❌
 1.18 |Try to select more than one radio button for a question |Only one radio button is selected|| ✅ ❌
 1.19 |Answer all the mandatory questions,click on the `SAVE` button|Data is saved,user navigates to the **Patient landing** screen with a success toast message: "**Disability assessment data saved**"|| ✅ ❌
-
 </details>
+
+<details open>
+   <summary><h2>2. DisabilityAssessment- Edit  ✅ ❌ </h2></summary>
+
+### Pre-condition
+This section is executed when at least one **`WG-SS` disability assessment** is done of a patient.To do a disa issue a device to a patient execute (TP 1.01 to 1.09)
+
+## Actor 
+- **Health Care Provider**
+- **Front Office Staff**
+- **Field Worker**
+
+S No | Action                      | Expected Result | Actual Result (if different)  | Pass/ Fail
+:-- | :--                          | :--             | :--                           | :--
+ 
