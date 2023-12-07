@@ -1,8 +1,8 @@
 # Related UCs
-- [Diagnosis & Medical History - Add](/../main/Webusecase/ClinicalFlow/Issue%20Assistive%20Device-Add.md)
-- [Diagnosis & Medical History - View&Edit](/../main/Webusecase/ClinicalFlow/Issue%20Assistive%20Device-View%26Remove.md)
+- [Diagnosis & Medical History - Add](/../main/Webusecase/ClinicalFlow/Issue%20Assistive%20Device-Add.md)(To do)
+- [Diagnosis & Medical History - View&Edit](/../main/Webusecase/ClinicalFlow/Issue%20Assistive%20Device-View%26Remove.md)(To do)
 
-## Test Procedure includes: Add, Edit & View Diagnosis & Medical History 
+## Test Procedure includes: Add, View & Edit Diagnosis & Medical History 
 
 <details open>
    <summary><h2>1. Diagnosis & Medical History - Add ✅ ❌ </h2></summary>
