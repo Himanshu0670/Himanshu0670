@@ -119,6 +119,9 @@ S No | Action                      | Expected Result | Actual Result (if differe
 3.08 |Verify the details on the **Disability Type** screen|Pre-selected options which were added during the Add/last update,❎ close button, Diagnosis & medical history <selected patient name(first+middle+last)>,Gender/Age Disability Type checkbox options[Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit),`BACK` & `NEXT`(button in enabled state).|| ✅ ❌
 3.09 |Click on the ❎ close button|User navigates to the **Diagnosis & Medical History** view screen. **Check up to `TP(1.16 to 1.34)` for validation**|| ✅ ❌
 3.10 |Click on `EDIT` button of **Onset of Disability** card|User navigates to the **Onset of Disability** edit screen|| ✅ ❌
+3.11 |Verify the details on the **Onset of Disability** screen|Pre-selected options of  which were added during the Add/last update,❎ close button, Diagnosis & medical history <selected patient name(first+middle+last)>,Gender/Age Onset of Disability questions [Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit#heading=h.gdokhetj78vk),`BACK` & `SAVE`(button in enabled state).|| ✅ ❌
+3.12 |Click on the ❎ close button|User navigates to the **Diagnosis & Medical History** view screen. **Check up to `TP(1.38 to 1.48)` for validation**|| ✅ ❌
+3.13 |Update answer by selecting `No` radio button of Question **“Was the patient born prematurely?”**,click on `SAVE` button|Data is saved, user navigates to the **Diagnosis & Medical History** view screen with a success toast message -`Diagnosis & medical history data updated`|| ✅ ❌
 
 
 </details>
