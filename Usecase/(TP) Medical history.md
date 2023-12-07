@@ -20,7 +20,7 @@ S No | Action                      | Expected Result | Actual Result (if differe
 1.02 |Check when Disability assessment is not recorded of a patient|Diagnosis & Medical History card is not displayed on **Patient landing** screen || ✅ ❌
 1.03 |Check when Disability assessment is recorded of a patient|Diagnosis & Medical History card is displayed on **Patient landing** screen || ✅ ❌
 1.04 |Click on the `ADD` button on Diagnosis & Medical History card|User navigates to the Diagnosis & Medical History `General Medical Conditions` sub-section screen|| ✅ ❌
-1.05 |Verify the details on the `General Medical Conditions` screen|Screen display following items in empty state: ❎ close button, Diagnosis & medical history of <selected patient name(first+middle+last)>,Gender/Age General Medical Conditions checkbox options[Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit#heading=h.kf6buc86qsnl) & `NEXT` (button in enabled state).|| ✅ ❌
+1.05 |Verify the details on the **General Medical Conditions** screen|Screen display following items in empty state: ❎ close button, Diagnosis & medical history <selected patient name(first+middle+last)>,Gender/Age General Medical Conditions checkbox options[Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit#heading=h.kf6buc86qsnl) & `NEXT` (button in enabled state).|| ✅ ❌
 1.06 |Click on the ❎ close button|User navigates to the **Patient landing** screen|| ✅ ❌
 1.07 |Do not select any checkbox option on `General Medical Conditions` screen,check the `NEXT` button|`NEXT` button is enabled|| ✅ ❌
 1.08 |Select only one checkbox option on `General Medical Conditions` screen - `Diabetes`|Checkbox option is selected|| ✅ ❌
@@ -30,7 +30,7 @@ S No | Action                      | Expected Result | Actual Result (if differe
 1.12 |After selecting `Other`checkbox option,do not enter value in mandatory textfield|`NEXT` button is disabled|| ✅ ❌
 1.13 |Enter -`A while backed I needed to count the amount of letters that a piece of text in an email template had (to avoid passing any character limits). Unfortunately, I could not think of a quick way to so on my` in **Please specify*** textfield|The last character `y` is truncated|| ✅ ❌
 1.14 |Select `Old Age`checkbox option on `General Medical Conditions` screen,click on `NEXT` button|User navigates to the Diagnosis & Medical History `Disability Type` sub-section screen|| ✅ ❌
-1.15 |Verify the details on the `Disability Type` screen|Screen display following items in empty state: ❎ close button, Diagnosis & medical history of <selected patient name(first+middle+last)>,Gender/Age Disability Type checkbox options[Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit),`BACK` & `NEXT`(button in enabled state).|| ✅ ❌
+1.15 |Verify the details on the **Disability Type** screen|Screen display following items in empty state: ❎ close button, Diagnosis & medical history<selected patient name(first+middle+last)>,Gender/Age Disability Type checkbox options[Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit),`BACK` & `NEXT`(button in enabled state).|| ✅ ❌
 1.16 |Click on `BACK` button on `Disability Type` screen|User navigates to the `General Medical Conditions` screen || ✅ ❌
 1.17 |Select “Physical Impairment” checkbox |“Physical Impairment” is selected,Sub-options is triggered|| ✅ ❌
 1.18 |Select “Visual Impairment” checkbox |“Visual Impairment” is selected,Sub-options is triggered|| ✅ ❌
@@ -50,7 +50,7 @@ S No | Action                      | Expected Result | Actual Result (if differe
 1.32 |Select any checkbox option on `Disability Type` screen |`NEXT` button is disabled until at least one sub-option is not selected except (Other) option|| ✅ ❌
 1.33 |Select more than one sub-option checkbox for any "Impairment" option except("Other Impairment") on `Disability Type` screen|`NEXT` button is enabled || ✅ ❌
 1.34 |Select “`Visual Impairment`” checkbox & "`Use glasses`" sub-options,click on the `NEXT` button |User navigates to the Diagnosis & Medical History `Onset of Disability` sub-section screen|| ✅ ❌
-1.35 |Verify the details on the `Onset of Disability` screen|Screen display following items in empty state: ❎ close button, Diagnosis & medical history of <selected patient name(first+middle+last)>,Gender/Age Onset of Disability questions [Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit#heading=h.gdokhetj78vk),`BACK` & `SAVE`(button in enabled state).|| ✅ ❌
+1.35 |Verify the details on the **Onset of Disability** screen|Screen display following items in empty state: ❎ close button, Diagnosis & medical history <selected patient name(first+middle+last)>,Gender/Age Onset of Disability questions [Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit#heading=h.gdokhetj78vk),`BACK` & `SAVE`(button in enabled state).|| ✅ ❌
 1.36 |Click on `BACK` button on `Onset of Disability` screen|User navigates to the `Disability Type` screen|| ✅ ❌
 1.37 |Click on ❎ button on `Onset of Disability` screen|User navigates to the **Patient landing** screen|| ✅ ❌
 1.38 |Do not answer any questions |`SAVE` button is enabled || ✅ ❌
@@ -111,11 +111,14 @@ S No | Action                      | Expected Result | Actual Result (if differe
 :-- | :--                          | :--             | :--                           | :--
 3.01 |Select a patient from **Patient list** whose **Diagnosis & Medical History** is not recorded |User navigates to the **Patient landing** screen,`ADD` button is displayed on **Diagnosis & Medical History** card|| ✅ ❌
 3.02 |Select a patient from **Patient list** whose **Diagnosis & Medical History** is recorded |User navigates to the **Patient landing** screen,`UPDATE` button is displayed on **Diagnosis & Medical History** card|| ✅ ❌
-3.03 |Click on the `UPDATE` button on **Diagnosis & Medical History** card|User navigates to the **Diagnosis & Medical History** view screen || ✅ ❌
+3.03 |Click on the `UPDATE` button on **Diagnosis & Medical History** card|User navigates to the **Diagnosis & Medical History** view screen|| ✅ ❌
 3.04 |Click on `EDIT` button of **General Medical Condition** card|User navigates to the **General Medical Condition** edit screen|| ✅ ❌
-3.05 |Click on `EDIT` button of **Disability Type** card|User navigates to the **Disability Type** edit screen|| ✅ ❌
-3.06 |Click on `EDIT` button of **Onset of Disability** card|User navigates to the **Onset of Disability** edit screen|| ✅ ❌
-
+3.05 |Verify the details on **General Medical Condition** screen|Pre-selected options which were added during the Add/last update, ❎ close button, Diagnosis & medical history <selected patient name(first+middle+last)>,Gender/Age General Medical Conditions checkbox options[Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit#heading=h.kf6buc86qsnl) & `NEXT` (button in enabled state).|| ✅ ❌
+3.06 |Click on the ❎ close button|User navigates to the **Diagnosis & Medical History** view screen. **Check up to `TP(1.07 to 1.14)` for validation**|| ✅ ❌
+3.07 |Click on `EDIT` button of **Disability Type** card|User navigates to the **Disability Type** edit screen|| ✅ ❌
+3.08 |Verify the details on the **Disability Type** screen|Pre-selected options which were added during the Add/last update,❎ close button, Diagnosis & medical history <selected patient name(first+middle+last)>,Gender/Age Disability Type checkbox options[Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit),`BACK` & `NEXT`(button in enabled state).|| ✅ ❌
+3.09 |Click on the ❎ close button|User navigates to the **Diagnosis & Medical History** view screen. **Check up to `TP(1.16 to 1.34)` for validation**|| ✅ ❌
+3.10 |Click on `EDIT` button of **Onset of Disability** card|User navigates to the **Onset of Disability** edit screen|| ✅ ❌
 
 
 </details>
