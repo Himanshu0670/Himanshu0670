@@ -32,6 +32,23 @@ S No | Action                      | Expected Result | Actual Result (if differe
 1.14 |Select `Old Age`checkbox option on `General Medical Conditions` screen,click on `NEXT` button|User navigates to the Diagnosis & Medical History `Disability Type` sub-section screen|| ✅ ❌
 1.15 |Verify the details on the `Disability Type` screen|Screen display following items in empty state: ❎ close button, Diagnosis & medical history of <selected patient name(first+middle+last)>,Gender/Age Disability Type checkbox options[Link](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit),`BACK` & `Next`(button in enabled state).|| ✅ ❌
 1.16 |Click on `BACK` button on `Disability Type` screen|User navigates to the `General Medical Conditions` screen || ✅ ❌
+1.17 |Select “Physical Impairment” checkbox |“Physical Impairment” is selected,Sub-options is triggered|| ✅ ❌
+1.18 |Select “Visual Impairment” checkbox |“Visual Impairment” is selected,Sub-options is triggered|| ✅ ❌
+1.19 |Select “Hearing Impairment” checkbox |“Hearing Impairment” is selected,Sub-options is triggered|| ✅ ❌
+1.20 |Select “Communication Impairment” checkbox |“Communication Impairment” is selected,Sub-options is triggered|| ✅ ❌
+1.21 |Select “Self-care Impairment” checkbox |“Self-care Impairment” is selected,Sub-options is triggered|| ✅ ❌
+1.22 |Select “Other Impairment” checkbox |“Other Impairment” is selected,`Please specify*` mandatory textfield is triggered|| ✅ ❌
+1.23 |Select `Other` checkbox option on “Physical Impairment” sub-options|`Other` option is selected,`Please specify*` mandatory textfield is triggered|| ✅ ❌
+1.24 |Select `Other` checkbox option on “Visual Impairment” sub-options|`Other` option is selected,`Please specify*` mandatory textfield is triggered|| ✅ ❌
+1.25 |Select `Other` checkbox option on “Hearing Impairment” sub-options|`Other` option is selected,`Please specify*` mandatory textfield is triggered|| ✅ ❌
+1.26 |Select `Other` checkbox option on “Communication Impairment” sub-options|`Other` option is selected,`Please specify*` mandatory textfield is triggered|| ✅ ❌
+1.27 |Select `Other` checkbox option on “Self-care Impairment” sub-options|`Other` option is selected,`Please specify*` mandatory textfield is triggered|| ✅ ❌
+1.28 |Select any other checkbox option except `Other`on any sub-options|No further question is appeared || ✅ ❌
+1.29 |Do not enter value in `Please specify*`mandatory textfield |`NEXT` button is disabled || ✅ ❌
+1.30 |Enter -`A while backed I needed to count the amount of letters that a piece of text in an email template had (to avoid passing any character limits). Unfortunately, I could not think of a quick way to so on my` in **Please specify*** textfield|The last character `y` is truncated|| ✅ ❌
+1.31 |Do not select any checkbox option on `Disability Type` screen |`NEXT` button is enabled || ✅ ❌
+1.32 |Select any checkbox option on `Disability Type` screen |`NEXT` button is disabled until at least one option of sub-option checkbox is not selected except (Other) option|| ✅ ❌
+1.33 |Select “`Visual Impairment`” checkbox & "`Use glasses`" sub-options,click on the `NEXT` button |User navigates to the Diagnosis & Medical History `Onset of Disability` sub-section screen|| ✅ ❌
 
 </details>
 
