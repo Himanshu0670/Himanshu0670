@@ -66,15 +66,13 @@ S No | Action                      | Expected Result | Actual Result (if differe
 1.48 |Do not fill any data in any sub-section of **Diagnosis & medical history**,click on `SAVE` button|`No data recorded` toast message is displayed|| ✅ ❌
 1.49 |Select `Yes` radio button of Question **“Was the patient born prematurely?”**,click on `SAVE` button|Data is saved, user navigates to the **Patient landing** screen with a success toast message -`Diagnosis & medical history data saved`|| ✅ ❌
 
-
-
 </details>
 
 <details open>
-   <summary><h2>2. DisabilityAssessment- View  ✅ ❌ </h2></summary>
+   <summary><h2>2. Diagnosis & Medical History - View  ✅ ❌ </h2></summary>
 
 ### Pre-condition
-This section is executed when at least one **`WG-SS` disability assessment** is done of a patient.To do a disability assessment a patient execute (TP 1.01 to 1.19)
+This section is executed when **Diagnosis & Medical History** is recorded of a patient.To record Diagnosis & Medical History of a patient execute (TP 1.01 to 1.49)
 
 ## Actor 
 
@@ -87,12 +85,14 @@ This section is executed when at least one **`WG-SS` disability assessment** is 
 
 S No | Action                      | Expected Result | Actual Result (if different)  | Pass/ Fail
 :-- | :--                          | :--             | :--                           | :--
-2.01 |Select a patient from **Patient list**|User navigates to the **Patient landing** screen|| ✅ ❌
-2.02 |Click on the Disability assessment **<date(dd month,yyyy) of creation/last update>** card|User navigates to the **Disability assessment** view screen || ✅ ❌
-2.03 |Check the **Disability assessment** view screen next day of disability assessment creation|`EDIT`button is not displayed on view screen || ✅ ❌
-2.04 |Check the **Disability assessment** view screen same day of disability assessment creation/last update|`EDIT`button is displayed on view screen || ✅ ❌
-2.05 |Verify the details on the view screen next day of disability assessment creation |Screen display following items: 🔙 button, Disability assessment <date(dd month,yyyy) of creation/last update>,Pre-filled six mandatory questions which was answered during the Creation/last update|| ✅ ❌
-2.06 |Click on the 🔙 button on view screen |User navigates to the **Patient landing** screen|| ✅ ❌
+2.01 |Select a patient from **Patient list** whose **Diagnosis & Medical History** is recorded |User navigates to the **Patient landing** screen,`UPDATE` button is displayed on **Diagnosis & Medical History** card|| ✅ ❌
+2.02 |Select a patient from **Patient list** whose **Diagnosis & Medical History** is not recorded |User navigates to the **Patient landing** screen,`ADD` button is displayed on **Diagnosis & Medical History** card|| ✅ ❌
+2.03 |Click on the `UPDATE` button on **Diagnosis & Medical History** card|User navigates to the **Diagnosis & Medical History** view screen || ✅ ❌
+2.04 |Verify the details on the view screen of **Diagnosis & Medical History** card |Screen display following items: 🔙 button, Diagnosis & Medical History <date(dd month,yyyy) of creation/last update>, **General Medical Condition,Disability Type and Onset of Disability cards** with answers which was added during the Add/last update|| ✅ ❌
+2.05 |Click on `EDIT` button of **General Medical Condition** card|User navigates to the **General Medical Condition** edit screen|| ✅ ❌
+2.06 |Click on `EDIT` button of **Disability Type** card|User navigates to the **Disability Type** edit screen|| ✅ ❌
+2.07 |Click on `EDIT` button of **Onset of Disability** card|User navigates to the **Onset of Disability** edit screen|| ✅ ❌
+2.08 |Click on the 🔙 button on view screen |User navigates to the **Patient landing** screen|| ✅ ❌
 
 
 </details>
