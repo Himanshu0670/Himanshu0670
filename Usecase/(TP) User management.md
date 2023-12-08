@@ -42,22 +42,24 @@ S No | Action                      | Expected Result | Actual Result (if differe
 1.22 |Select `Active` dropdown option for `Status` filter |Option is selected,User list is filtered accordingly|| ✅ ❌
 1.23 |Select more than one dropdown option for `Role` filter |Only one option is selected|| ✅ ❌
 1.24 |Apply multiple filters - `Status` & `Role`,check the user list|User list is filtered according to the selected filters|| ✅ ❌
-1.24 |Apply filter,check when no record found under filter criteria|`No results found` message is displayed|| ✅ ❌
-1.25 |Click on the Search field|Field is clickable|| ✅ ❌
-1.26 |Search user with `Full name` in User list|All the matched record is displayed|| ✅ ❌
-1.27 |Search user with `Organization` in User list|All the matched record is displayed|| ✅ ❌
-1.28 |Search user with `Role` in User list|All the matched record is displayed|| ✅ ❌
-1.29 |Search user with `Mobile #` in User list|All the matched record is displayed|| ✅ ❌
-1.30 |Search user with `Status` in User list|All the matched record is displayed|| ✅ ❌
-1.31 |Click on search field,type `H` atleast one character - |Search functionality works,All the matched record is displayed|| ✅ ❌
-1.29 |Click on search field,type `Device_$$`.Click on the ❎ button under search field |Entered value is removed from search field|| ✅ ❌
-1.28 |Click on search field,type `Device_$$`,check when no record found in user list|`No results found` message is displayed|| ✅ ❌
-1.29 |Check the `RESET FILTERS` button no fiters is applied on User list |`RESET FILTERS` button is disabled|| ✅ ❌
-1.29 |Check the `RESET FILTERS` button when fiters is applied on User list |`RESET FILTERS` button is enabled|| ✅ ❌
-1.28 |Click on search field,type `Device_$$`,check the `RESET FILTERS` button |`RESET FILTERS` button is enabled|| ✅ ❌
-
-
-
+1.25 |Apply filter,check when no record found under filter criteria|`No results found` message is displayed|| ✅ ❌
+1.26 |Click on the Search field|Field is clickable|| ✅ ❌
+1.27 |Search user with `Full name` in User list|All the matched record is displayed|| ✅ ❌
+1.28 |Search user with `Organization` in User list|All the matched record is displayed|| ✅ ❌
+1.29 |Search user with `Role` in User list|All the matched record is displayed|| ✅ ❌
+1.30 |Search user with `Mobile #` in User list|All the matched record is displayed|| ✅ ❌
+1.31 |Search user with `Status` in User list|All the matched record is displayed|| ✅ ❌
+1.32 |Click on search field,type `H` atleast one character - |Search functionality works,All the matched record is displayed|| ✅ ❌
+1.33 |Click on search field,type `Device_$$`.Click on the ❎ button under search field |Entered value is removed from search field|| ✅ ❌
+1.34 |Click on search field,type `Device_$$`,check when no record found in user list|`No results found` message is displayed|| ✅ ❌
+1.35 |Check the `RESET FILTERS` button no fiters is applied on User list |`RESET FILTERS` button is disabled|| ✅ ❌
+1.36 |Check the `RESET FILTERS` button when fiters is applied on User list |`RESET FILTERS` button is enabled|| ✅ ❌
+1.37 |Click on search field,type `Device_$$`,check the `RESET FILTERS` button |`RESET FILTERS` button is enabled|| ✅ ❌
+1.38 |Check the default pagination of User list |Default pagination is `25` records for User list|| ✅ ❌
+1.39 |Click on the `Items per page` dropdown field |Dropdown opens|| ✅ ❌
+1.40 |Check the other `Items per page` dropdown options|Dropdown options is `25`, `50`, `75`, `100`|| ✅ ❌
+1.41 |Select `50` `Items per page` dropdown option|`50` records is displayed on User list|| ✅ ❌
+1.42 |Check when any field name is too long|Name is displayed as tooltip|| ✅ ❌
 
 </details>
 
