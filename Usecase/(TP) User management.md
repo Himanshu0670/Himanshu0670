@@ -1,41 +1,58 @@
 # Related UCs
+- [User List View](To do)
 - [User- Add](To do)
 - [User - View&Edit](To do)
 - [Disable User](To do)
-- [User List View](To do)
 
-## Test Procedure includes: User list,Add,View & Edit User disability assessment 
+## Test Procedure includes: User list,Add,View & Edit User details. 
 
 <details open>
-   <summary><h2>1. User- Add  ✅ ❌ </h2></summary>
+   <summary><h2>1. User List View  ✅ ❌ </h2></summary>
 
 ### Pre-condition
 - This section is executed when user login in to the system.
 
 ## Actor 
 - **Admin**
+- **Analyst** (👁️)
 
 S No | Action                      | Expected Result | Actual Result (if different)  | Pass/ Fail
 :-- | :--                          | :--             | :--                           | :--
-1.01 |Select a patient from **Patient list**|User navigates to the **Patient landing** screen|| ✅ ❌
-1.02 |Click on the `START` button of`“Disability Assessment” on the **Patient landing** screen|User navigates to the “**Disability Assessment**” screen|| ✅ ❌
-1.03 |Verify the details on the screen|Screen display following items in empty state:❎ button, Disability assessment <selected patient name(first+middle+last)>,`Gender/Age`,Six mandatory questions mentioned in Vanuatu MDR: [workflow](https://docs.google.com/document/d/1RqBZYZhrnFEiOvU8gxUqofLYwvitQAlETRXzwW4Xtr0/edit#heading=h.ow5vkgl9hyc2) & `Save` (button in disabled state)|| ✅ ❌
-1.04 |Click on the ❎ button|User navigates to the **Patient landing** screen|| ✅ ❌
-1.05 |Answer all the mandatory questions,check the `SAVE` button|`SAVE` button is enabled|| ✅ ❌
-1.06 |Do not answer all the mandatory questions,check the `SAVE` button|`SAVE` button is disabled|| ✅ ❌
-1.07 |Select the “**No difficulty**” radio button for all questions|“**No difficulty**” radio button is selected|| ✅ ❌
-1.08 |Select the “**Some difficulty**” radio button for all questions|“**Some difficulty**” radio button is selected|| ✅ ❌
-1.09 |Select the “**A lot of difficulty**” radio button for all questions|“**A lot of difficulty**” radio button is selected|| ✅ ❌
-1.10 |Select the “**Cannot do at all**” radio button for all questions|“**Cannot do at all**” radio button is selected|| ✅ ❌
-1.11 |Select any one radio button for question **Do you have difficulty seeing, even if wearing glasses?***|Radio button is selected|| ✅ ❌
-1.12 |Select any one radio button for question **Do you have difficulty hearing, even if using a hearing aid(s)?***|Radio button is selected|| ✅ ❌
-1.13 |Select any one radio button for question **Do you have difficulty walking or climbing steps?***|Radio button is selected|| ✅ ❌
-1.14 |Select any one radio button for question **Do you have difficulty remembering or concentrating?***|Radio button is selected|| ✅ ❌
-1.15 |Select any one radio button for question **Do you have difficulty with self-care, such as washing all over or dressing?***|Radio button is selected|| ✅ ❌
-1.16 |Select any one radio button for question **Using your usual language, do you have difficulty communicating, for example understanding or being understood?***|Radio button is selected|| ✅ ❌
-1.17 |Select any one radio button for all the mandatory questions|Radio button is selected|| ✅ ❌
-1.18 |Try to select more than one radio button for a question |Only one radio button for a question is selected|| ✅ ❌
-1.19 |Answer all the mandatory questions,click on the `SAVE` button|Data is saved,user navigates to the **Patient landing** screen with a success toast message: "**Disability assessment data saved**"|| ✅ ❌
+1.01 |Login successfully to the web|User navigates to the **User list view** screen|| ✅ ❌
+1.02 |Verify the details on the User list screen|Screen display following items: User list,Filters by (Organization,Role,Status),Search field,`RESET FILTERS` & `ADD USER` button|| ✅ ❌
+1.03 |Check the User list screen when no user is registered to the web|**No user registered yet, please click on ADD USER button to register a user.** text is displayed|| ✅ ❌
+1.04 |Click on the top-right `Profile` icon|Dialog opens with user details|| ✅ ❌
+1.05 |Click outside screen when profile details dialog opens |Profile details dialog closed|| ✅ ❌
+1.06 |Check the user details on User list screen|User details is shown on the list view: Full name, Organization, Role, Mobile # & Status|| ✅ ❌
+1.07 |Check the top-most record on the User list|Most recently added/updated user record is appears at the top of the list User list| ✅ ❌
+1.08 |Check the filter options on User list screen|User can filter list by: `Organization``Role` & `Status`|| ✅ ❌
+1.09 |Check the default value for `Organization` filter|`All` option is the default value for `Organization` filter|| ✅ ❌
+1.10 |Click on the `Organization` filter field|Dropdown opens|| ✅ ❌
+1.11 |Check the other dropdown option for `Organization` filter|List is fetched from the backend for `Organization` filter value|| ✅ ❌
+1.12 |Select any other dropdown option for `Organization` filter |Option is selected,User list is filtered accordingly|| ✅ ❌
+1.13 |Select more than one dropdown option for `Organization` filter |Only one option is selected|| ✅ ❌
+1.14 |Check the default value for `Role` filter|`All` option is the default value for `Role` filter|| ✅ ❌
+1.15 |Click on the `Role` filter field|Dropdown opens|| ✅ ❌
+1.16 |Check the other dropdown option for `Role` filter|Dropdown options: `All`, `Front office staff`, `Device issuer`, `Healthcare provider`, `Admin` & `Analyst` is displayed|| ✅ ❌
+1.17 |Select any other dropdown option for `Role` filter |Option is selected,User list is filtered accordingly|| ✅ ❌
+1.18 |Select more than one dropdown option for `Role` filter |Only one option is selected|| ✅ ❌
+1.19 |Check the default value for `Status` filter|`All` option is the default value for `Status` filter|| ✅ ❌
+1.20 |Click on the `Status` filter field|Dropdown opens|| ✅ ❌
+1.21 |Check the other dropdown option for `Status` filter|Dropdown options: `All`, `Active` & `Inactive`|| ✅ ❌
+1.22 |Select any other dropdown option for `Status` filter |Option is selected,User list is filtered accordingly|| ✅ ❌
+1.23 |Select more than one dropdown option for `Role` filter |Only one option is selected|| ✅ ❌
+1.24 |Apply multiple filters - `Status` & `Role`,check the user list|User list is filtered according to the selected filters|| ✅ ❌
+1.25 |||| ✅ ❌
+1.26 |||| ✅ ❌
+1.27 |||| ✅ ❌
+1.28 |||| ✅ ❌
+1.29 |||| ✅ ❌
+1.30 |||| ✅ ❌
+
+
+
+
+
 </details>
 
 <details open>
