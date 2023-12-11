@@ -4,7 +4,7 @@
 - [User - View&Edit](To do)
 - [Disable User](To do)
 
-## Test Procedure includes: User list,Add,View & Edit User details. 
+## Test Procedure includes: User list,Add,View & Edit user details. 
 
 <details open>
    <summary><h2>1. User List View  ✅ ❌ </h2></summary>
@@ -74,7 +74,6 @@ S No | Action                      | Expected Result | Actual Result (if differe
 - This section is executed when user login in to the system.
 
 ## Actor 
-
 - **Admin**
 
 S No | Action                      | Expected Result | Actual Result (if different)  | Pass/ Fail
@@ -114,8 +113,45 @@ S No | Action                      | Expected Result | Actual Result (if differe
 2.34 |Click outside of **Add user** dialog screen|**Add user** dialog is not closed|| ✅ ❌
 2.35 |Fill all mandatory fileds,Click on the `SAVE`|A new user is created,user navigates to the user list with success toast message `User added successfully`|| ✅ ❌
 
+### Pre-condition
+- This section is executed when atleaset one user is registeredto the system.To register a user execute TP (2.01 to 2.35).
 
-</details>
+## Actor 
+- **Admin**
 
-<details open>
-   <summary><h2>3. DisabilityAssessment- Edit  ✅ ❌ </h2></summary>
+S No | Action                      | Expected Result | Actual Result (if different)  | Pass/ Fail
+:-- | :--                          | :--             | :--                           | :--
+2.01 |Click on the `ADD USER` button on User list screen |**Add user** dialog is opened|| ✅ ❌
+2.03 |Check the dialog header|Screen header is **Add user**|| ✅ ❌
+2.04 |Verify the details on **Add user** dialog|Dialog display following details: User details,Organization details,Accound configuration, `SAVE` & `CANCEL` button|| ✅ ❌
+2.05 |Check all the mandatory fields on **Add user** dialog|All the mandatory fields are marked with (*)|| ✅ ❌
+2.06 |Click on `Given name*` field |Field is clickable|| ✅ ❌
+2.07 |Keep the `Given name*` field empty|User get an error message `Please enter at least 3 characters`|| ✅ ❌
+2.08 |Enter a value between 3 to 50 characters : `A while backed I needed to count the amount letter` in `Given name*` field |Input value accepted|| ✅ ❌
+2.09 |Enter `A while backed I needed to count the amount letters` in `Given name*` field|Last character `s` is truncate || ✅ ❌
+2.10 |Click on `Family name` field |Field is clickable|| ✅ ❌
+2.11 |Keep the `Family name` field empty|No error is displayed|| ✅ ❌
+2.12 |Enter a value between 1 to 50 characters : `A while backed I needed to count the amount letter` in `Family name` field|Input value accepted|| ✅ ❌
+2.13 |Enter `A while backed I needed to count the amount letters` in `Family name` field|Last character `s` is truncate || ✅ ❌
+2.14 |Click on `Mobile number*` field |Field is clickable|| ✅ ❌
+2.15 |Keep the `Mobile number*` field empty|User get an error message `Enter a valid mobile number`|| ✅ ❌
+2.16 |Enter a value between 5 to 10 digits: `9936367755` in `Mobile number*` field|Input value accepted|| ✅ ❌
+2.17 |Enter `99363677551` in `Mobile number*` field|Last digit `1` is truncate || ✅ ❌
+2.18 |Enter a duplicate mobile number,Click on `SAVE` button when all mandatory fields are filled|User get an toast message `Duplicate mobile number`|| ✅ ❌
+2.19 |Click on `Organization*` field|Dropdown options is displayed|| ✅ ❌
+2.20 |Check the dropdown options|List is fetched from the backend|| ✅ ❌
+2.21 |Keep the `Organization*` field empty|User get an error message `Please select a organization`|| ✅ ❌
+2.22 |Select a organization from the dropdown options|Organization is selected|| ✅ ❌
+2.23 |Select more than one dropdown options|Only one option at a time is selected|| ✅ ❌
+2.24 |Click on `Role*` field|Dropdown options is displayed|| ✅ ❌
+2.25 |Check the dropdown options|Dropdown options includes- `Front office staff`, `Device issuer`, `Healthcare provider`, `Admin` & `Analyst`|| ✅ ❌
+2.26 |Keep the `Role*` field empty|User get an error message `Please select a role`|| ✅ ❌
+2.27 |Select a role from the dropdown options|Role is selected|| ✅ ❌
+2.28 |Select more than one dropdown options|Only one option at a time is selected|| ✅ ❌
+2.29 |Check the default `Account configuration`|By default `Account configuration` is set to:**User account is active**|| ✅ ❌
+2.30 |Click on the toggle button|`Account configuration` is set to:**User account is inactive**|| ✅ ❌
+2.31 |Check the `SAVE` button when any mandatory field is not filled|`SAVE` button is disabled|| ✅ ❌
+2.32 |Check the `SAVE` button when all mandatory field is filled|`SAVE` button is enabled|| ✅ ❌
+2.33 |Click on the `CANCEL` button on **Add user** dialog screen|No new user is added,user navigates to the user list|| ✅ ❌
+2.34 |Click outside of **Add user** dialog screen|**Add user** dialog is not closed|| ✅ ❌
+2.35 |Fill all mandatory fileds,Click on the `SAVE`|A new user is created,user navigates to the user list with success toast message `User added successfully`|| ✅ ❌
