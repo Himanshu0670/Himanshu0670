@@ -24,7 +24,7 @@ S No | Action                      | Expected Result | Actual Result (if differe
 1.04 |Click on the top-right `Profile` icon|Dialog opens with user details|| ✅ ❌
 1.05 |Click outside screen when profile details dialog opens |Profile details dialog closed|| ✅ ❌
 1.06 |Check the user details on User list screen|User details is shown on the list view: Full name, Organization, Role, Mobile # & Status|| ✅ ❌
-1.07 |Check the top-most record on the User list|Most recently added/updated user record is appears at the top of the list User list| ✅ ❌
+1.07 |Check the top-most record on the User list|Most recently added/updated user record is appears at the top of the list User list|| ✅ ❌
 1.08 |Check the filter options on User list screen|User can filter list by: `Organization``Role` & `Status`|| ✅ ❌
 1.09 |Check the default value for `Organization` filter|`All` option is the default value for `Organization` filter|| ✅ ❌
 1.10 |Click on the `Organization` filter field|Dropdown opens|| ✅ ❌
@@ -60,32 +60,50 @@ S No | Action                      | Expected Result | Actual Result (if differe
 1.40 |Check the other `Items per page` dropdown options|Dropdown options is `25`, `50`, `75`, `100`|| ✅ ❌
 1.41 |Select `50` `Items per page` dropdown option|`50` records is displayed on User list|| ✅ ❌
 1.42 |Check when any field name is too long|Name is displayed as tooltip|| ✅ ❌
+1.43 |Check the User list sorting columns|User can sort list by using the following column names: `Full Name`,`Mobile#` & `Status`|| ✅ ❌
+1.44 |Click on the `Full Name` sort icon|User list is sorted according to the selected column name|| ✅ ❌
+1.45 |Click on the `Mobile #` sort icon|User list is sorted according to the selected column name|| ✅ ❌
+1.46 |Click on the `Status` sort icon|User list is sorted according to the selected column name|| ✅ ❌
 
 </details>
 
 <details open>
-   <summary><h2>2. DisabilityAssessment- View  ✅ ❌ </h2></summary>
+   <summary><h2>2. User - Add  ✅ ❌ </h2></summary>
 
 ### Pre-condition
-This section is executed when at least one **`WG-SS` disability assessment** is done of a patient.To do a disability assessment a patient execute (TP 1.01 to 1.19)
+- This section is executed when user login in to the system.
 
 ## Actor 
 
-- **Front Office Staff** (👁️)
-- **Health Care Provider**(👁️)
-- **Field Worker**(👁️)
-- **Admin** (👁️)
-- **Analyst** (👁️)
-- **Device Issuer**(👁️)
+- **Admin**
 
 S No | Action                      | Expected Result | Actual Result (if different)  | Pass/ Fail
 :-- | :--                          | :--             | :--                           | :--
-2.01 |Select a patient from **Patient list**|User navigates to the **Patient landing** screen|| ✅ ❌
-2.02 |Click on the Disability assessment **<date(dd month,yyyy) of creation/last update>** card|User navigates to the **Disability assessment** view screen || ✅ ❌
-2.03 |Check the **Disability assessment** view screen next day of disability assessment creation|`EDIT`button is not displayed on view screen || ✅ ❌
-2.04 |Check the **Disability assessment** view screen same day of disability assessment creation/last update|`EDIT`button is displayed on view screen || ✅ ❌
-2.05 |Verify the details on the view screen next day of disability assessment creation |Screen display following items: 🔙 button, Disability assessment <date(dd month,yyyy) of creation/last update>,Pre-filled six mandatory questions which was answered during the Creation/last update|| ✅ ❌
-2.06 |Click on the 🔙 button on view screen |User navigates to the **Patient landing** screen|| ✅ ❌
+2.01 |Click on the `ADD USER` button on User list screen |**Add user** dialog is opened|| ✅ ❌
+2.03 |Check the dialog header|Screen header is **Add user**|| ✅ ❌
+2.04 |Verify the details on **Add user** dialog|Dialog display following details: User details,Organization details,Accound configuration, `SAVE` & `CANCEL` button|| ✅ ❌
+2.05 |Check all the mandatory fields on **Add user** dialog|All the mandatory fields are marked with (*)|| ✅ ❌
+2.06 |Click on `Given name*` field |Field is clickable|| ✅ ❌
+2.07 |Keep the `Given name*` field empty|User get an error message `Please enter at least 3 characters`|| ✅ ❌
+2.08 |Enter a value between 3 to 50 characters : `A while backed I needed to count the amount letter` in `Given name*` field |Input value accepted|| ✅ ❌
+2.09 |Enter `A while backed I needed to count the amount letters` in `Given name*` field|Last character `s` is truncate || ✅ ❌
+2.10 |Click on `Family name` field |Field is clickable|| ✅ ❌
+2.11 |Keep the `Family name` field empty|No error is displayed|| ✅ ❌
+2.12 |Enter a value between 1 to 50 characters : `A while backed I needed to count the amount letter` in `Family name` field|Input value accepted|| ✅ ❌
+2.13 |Enter `A while backed I needed to count the amount letters` in `Family name` field|Last character `s` is truncate || ✅ ❌
+2.14 |Click on `Mobile number*` field |Field is clickable|| ✅ ❌
+2.15 |Keep the `Mobile number*` field empty|User get an error message `Enter a valid mobile number`|| ✅ ❌
+2.16 |Enter a value between 5 to 10 digits: `9936367755` in `Mobile number*` field|Input value accepted|| ✅ ❌
+2.17 |Enter `99363677551` in `Mobile number*` field|Last digit `1` is truncate || ✅ ❌
+2.18 |Enter a duplicate mobile number,Click on `SAVE` button when all mandatory fields are filled|User get an toast message `Duplicate mobile number`|| ✅ ❌
+2.19 |Click on `Organization` field|Dropdown options is displayed|| ✅ ❌
+2.20 |Check the dropdown options|List is fetched from the backend|| ✅ ❌
+2.21 |Keep the `Organization` field empty|User get an error message `Please select a organization`|| ✅ ❌
+2.21 |Select a organization from the dropdown options|Organization is selected|| ✅ ❌
+2.21 |||| ✅ ❌
+2.21 |||| ✅ ❌
+2.21 |||| ✅ ❌
+2.21 |||| ✅ ❌
 
 
 </details>
