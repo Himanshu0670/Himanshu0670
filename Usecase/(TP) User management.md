@@ -108,7 +108,11 @@ S No | Action                      | Expected Result | Actual Result (if differe
 2.28 |Select more than one dropdown options|Only one option at a time is selected|| ✅ ❌
 2.29 |Check the default `Account configuration`|By default `Account configuration` is set to:**User account is active**|| ✅ ❌
 2.30 |Click on the toggle button|`Account configuration` is set to:**User account is inactive**|| ✅ ❌
-2.31 |||| ✅ ❌
+2.31 |Check the `SAVE` button when any mandatory field is not filled|`SAVE` button is disabled|| ✅ ❌
+2.32 |Check the `SAVE` button when all mandatory field is filled|`SAVE` button is enabled|| ✅ ❌
+2.33 |Click on the `CANCEL` button on **Add user** dialog screen|No new user is added,user navigates to the user list|| ✅ ❌
+2.34 |Click outside of **Add user** dialog screen|**Add user** dialog is not closed|| ✅ ❌
+2.35 |Fill all mandatory fileds,Click on the `SAVE`|A new user is created,user navigates to the user list with success toast message `User added successfully`|| ✅ ❌
 
 
 </details>
