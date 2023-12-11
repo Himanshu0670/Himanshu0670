@@ -1,8 +1,8 @@
 # Related UCs
-- [User List View](To do)
-- [User- Add](To do)
-- [User - View&Edit](To do)
-- [Disable User](To do)
+- [User List View](https://github.com/LatticeInnovations/vanuatu-mdr-main/blob/main/Web%20usecase/User_Management/UC_UserList.md)
+- [User- Add](https://github.com/LatticeInnovations/vanuatu-mdr-main/blob/main/Web%20usecase/User_Management/UC_AddUser.md)
+- [User - Edit](https://github.com/LatticeInnovations/vanuatu-mdr-main/blob/main/Web%20usecase/User_Management/UC_EditUser.md)
+- [Disable User](https://github.com/LatticeInnovations/vanuatu-mdr-main/blob/main/Web%20usecase/User_Management/UC_DisableUser.md)
 
 ## Test Procedure includes: User list,Add,View & Edit user details. 
 
@@ -116,46 +116,69 @@ S No | Action                      | Expected Result | Actual Result (if differe
 </details>
 
 <details open>
-   <summary><h2>2. User - Edit  ✅ ❌ </h2></summary>
+   <summary><h2>3. User - Edit  ✅ ❌ </h2></summary>
 
 ### Pre-condition
-- This section is executed when atleaset one user is registeredto the system.To register a user execute TP (2.01 to 2.35).
+- This section can be executed when atleaset one user is registered to the system.To register a user execute TP (2.01 to 2.35).
 
 ## Actor 
 - **Admin**
 
 S No | Action                      | Expected Result | Actual Result (if different)  | Pass/ Fail
 :-- | :--                          | :--             | :--                           | :--
-2.01 |Click on the ✏️ edit button on User list screen |**Edit user** dialog is opened|| ✅ ❌
-2.03 |Check the dialog header|Screen header is **Edit user**|| ✅ ❌
-2.04 |Verify the details on **Edit user** dialog|Dialog display following details: Pre-filled data displayed during add/update,`SAVE` & `CANCEL` button|| ✅ ❌
-2.05 |Check all the mandatory fields on **Edit user** dialog|All the mandatory fields are marked with (*)|| ✅ ❌
-2.06 |Click on `Given name*` field |Field is clickable|| ✅ ❌
-2.07 |Remove already entered `Given name*` & keep the field empty|User get an error message `Please enter at least 3 characters`|| ✅ ❌
-2.08 |Enter a value between 3 to 50 characters : `A while backed I needed to count the amount letter` in `Given name*` field |Input value accepted|| ✅ ❌
-2.09 |Enter `A while backed I needed to count the amount letters` in `Given name*` field|Last character `s` is truncate || ✅ ❌
-2.10 |Click on `Family name` field |Field is clickable|| ✅ ❌
-2.11 |Remove already entered `Family name` & keep the field empty|No error is displayed|| ✅ ❌
-2.12 |Enter a value between 1 to 50 characters : `A while backed I needed to count the amount letter` in `Family name` field|Input value accepted|| ✅ ❌
-2.13 |Enter `A while backed I needed to count the amount letters` in `Family name` field|Last character `s` is truncate || ✅ ❌
-2.14 |Click on `Mobile number*` field |Field is clickable|| ✅ ❌
-2.15 |Remove already entered `Mobile number*`& keep the field empty|User get an error message `Enter a valid mobile number`|| ✅ ❌
-2.16 |Enter a value between 5 to 10 digits: `9936367755` in `Mobile number*` field|Input value accepted|| ✅ ❌
-2.17 |Enter `99363677551` in `Mobile number*` field|Last digit `1` is truncate || ✅ ❌
-2.18 |Enter a duplicate mobile number,Click on `SAVE` button when all mandatory fields are filled|User get an toast message `Duplicate mobile number`|| ✅ ❌
-2.19 |Click on `Organization*` field|Dropdown options is displayed|| ✅ ❌
-2.20 |Check the dropdown options|List is fetched from the backend|| ✅ ❌
-2.21 |Update organization from the dropdown options|Organization is updated|| ✅ ❌
-2.22 |Select more than one dropdown options|Only one option at a time is selected|| ✅ ❌
-2.23 |Click on `Role*` field|Dropdown options is displayed|| ✅ ❌
-2.24 |Check the dropdown options|Dropdown options includes- `Front office staff`, `Device issuer`, `Healthcare provider`, `Admin` & `Analyst`|| ✅ ❌
-2.25 |Update role from the dropdown options|Role is updated|| ✅ ❌
-2.26 |Select more than one dropdown options|Only one option at a time is selected|| ✅ ❌
-2.27 |Check the last `Account configuration`|Last `Account configuration` is displyed|| ✅ ❌
-2.28 |Click on the toggle button|`Account configuration` is changed|| ✅ ❌
-2.29 |Check the `SAVE` button when any mandatory field is not filled|`SAVE` button is disabled|| ✅ ❌
-2.30 |Check the `SAVE` button when all mandatory field is filled|`SAVE` button is enabled|| ✅ ❌
-2.33 |Click on the `CANCEL` button on **Edit user** dialog screen|User details is not updated,user navigates to the **User list**|| ✅ ❌
-2.34 |Click outside of **Edit user** dialog screen|**Edit user** dialog is not closed|| ✅ ❌
-2.35 |Update & fill all mandatory fileds,Click on the `SAVE`|User details is updated,user navigates to the **User list** with success toast message `User details updated successfully`|| ✅ ❌
-2.36 |Do not update the any user details,Click on the `SAVE`|User navigates to the **User list** with success toast message `User details updated successfully`|| ✅ ❌
+3.01 |Click on the ✏️ edit button on User list screen |**Edit user** dialog is opened|| ✅ ❌
+3.02 |Check the dialog header|Screen header is **Edit user**|| ✅ ❌
+3.03 |Verify the details on **Edit user** dialog|Dialog display following details: Pre-filled data displayed during add/update,`SAVE` & `CANCEL` button|| ✅ ❌
+3.04 |Check all the mandatory fields on **Edit user** dialog|All the mandatory fields are marked with (*)|| ✅ ❌
+3.05 |Click on `Given name*` field |Field is clickable|| ✅ ❌
+3.06 |Remove already entered `Given name*` & keep the field empty|User get an error message `Please enter at least 3 characters`|| ✅ ❌
+3.07 |Enter a value between 3 to 50 characters : `A while backed I needed to count the amount letter` in `Given name*` field |Input value accepted|| ✅ ❌
+3.08 |Enter `A while backed I needed to count the amount letters` in `Given name*` field|Last character `s` is truncate || ✅ ❌
+3.09 |Click on `Family name` field |Field is clickable|| ✅ ❌
+3.10 |Remove already entered `Family name` & keep the field empty|No error is displayed|| ✅ ❌
+3.11 |Enter a value between 1 to 50 characters : `A while backed I needed to count the amount letter` in `Family name` field|Input value accepted|| ✅ ❌
+3.12 |Enter `A while backed I needed to count the amount letters` in `Family name` field|Last character `s` is truncate || ✅ ❌
+3.13 |Click on `Mobile number*` field |Field is clickable|| ✅ ❌
+3.14 |Remove already entered `Mobile number*`& keep the field empty|User get an error message `Enter a valid mobile number`|| ✅ ❌
+3.15 |Enter a value between 5 to 10 digits: `9936367755` in `Mobile number*` field|Input value accepted|| ✅ ❌
+3.16 |Enter `99363677551` in `Mobile number*` field|Last digit `1` is truncate || ✅ ❌
+3.17 |Enter a duplicate mobile number,Click on `SAVE` button when all mandatory fields are filled|User get an toast message `Duplicate mobile number`|| ✅ ❌
+3.18 |Click on `Organization*` field|Dropdown options is displayed|| ✅ ❌
+3.19 |Check the dropdown options|List is fetched from the backend|| ✅ ❌
+3.20 |Update organization from the dropdown options|Organization is updated|| ✅ ❌
+3.21 |Select more than one dropdown options|Only one option at a time is selected|| ✅ ❌
+3.22 |Click on `Role*` field|Dropdown options is displayed|| ✅ ❌
+3.23 |Check the dropdown options|Dropdown options includes- `Front office staff`, `Device issuer`, `Healthcare provider`, `Admin` & `Analyst`|| ✅ ❌
+3.24 |Update role from the dropdown options|Role is updated|| ✅ ❌
+3.25 |Select more than one dropdown options|Only one option at a time is selected|| ✅ ❌
+3.26 |Check the last `Account configuration`|Last `Account configuration` is displyed|| ✅ ❌
+3.27 |Click on the toggle button|`Account configuration` is changed|| ✅ ❌
+3.28 |Check the `SAVE` button when any mandatory field is not filled|`SAVE` button is disabled|| ✅ ❌
+3.29 |Check the `SAVE` button when all mandatory field is filled|`SAVE` button is enabled|| ✅ ❌
+3.30 |Click on the `CANCEL` button on **Edit user** dialog screen|User details is not updated,user navigates to the **User list**|| ✅ ❌
+3.31 |Click outside of **Edit user** dialog screen|**Edit user** dialog is not closed|| ✅ ❌
+3.32 |Update & fill all mandatory fileds,Click on the `SAVE`|User details is updated,user navigates to the **User list** with success toast message `User details updated successfully`|| ✅ ❌
+3.33 |Do not update the any user details,Click on the `SAVE`|User navigates to the **User list** with success toast message `User details updated successfully`|| ✅ ❌
+
+</details>
+
+</details>
+
+<details open>
+   <summary><h2>4. Disable User ✅ ❌ </h2></summary>
+
+### Pre-condition
+- This section can be executed when atleaset one user is registered to the system.To register a user execute TP (2.01 to 2.35).
+
+## Actor 
+- **Admin**
+
+S No | Action                      | Expected Result | Actual Result (if different)  | Pass/ Fail
+:-- | :--                          | :--             | :--                           | :--
+4.01 |Click on `Active' toggle of a user in the **User list**|**Change status?** dialog is opened|| ✅ ❌
+4.02 |Verify the details on **Change status?** dialog |User get text : `Are you sure you want to deactivate user account?` along with `NO, GO BACK` & `YES, CHANGE` button || ✅ ❌
+4.03 |Click on `NO, GO BACK` button |Dialog is closed, user navgate to the **User list** screen|| ✅ ❌
+4.04 |Click on `YES, CHANGE` button |User status changes to `Inactive`, dialog is closed, user navgate to the **User list** screen with success toast message `User status updated`|| ✅ ❌
+4.05 |Check the status text after deactivating the user account in the **User list** |User status is `Inactive` on **User list** screen|| ✅ ❌
+4.06 |Click on `Inactive' toggle  of a user in the **User list** |User status changes to `Active`,toast message displayed `User status updated`|| ✅ ❌
+4.07 |Check the status text after activating the user account in the **User list** |User status is `Active` on **User list** screen|| ✅ ❌
