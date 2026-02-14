@@ -14,7 +14,8 @@
 
 - 📫 How to reach me **himan168559@gmail.com**
 
-- 📄 [Know about my experiences](https://drive.google.com/file/d/1Wf02Fi9ndfR5q0hXPlm_hs39-RgIRT6-/view) 
+- 📄 [Know about my experiences](https://github.com/user-attachments/files/25314301/Himanshu_Kumar_Pal.-.Resume.pdf)
+  
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
