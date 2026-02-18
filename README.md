@@ -8,7 +8,7 @@
 
 - 🔭 I’m currently working on **Vandana Rail Site Web Application**
 
-- 🌱 I’m currently learning **Cypress**
+- 🌱 I’m currently learning **Cypress**, Additionally, I am currently writing scripts for my internal project named as Vandhana Rail.
 
 - 💬 Ask me about **Cypress**
 
